@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Testimoni — BoomPesantren</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" fill="none" height="36">
+          <g transform="translate(0,4)">
+            <path d="M8 6c0-2 1.5-3.5 3.5-3.5h2c2.5 0 4.5 1.2 6 3.2 1.5-2 3.5-3.2 6-3.2h2c2 0 3.5 1.5 3.5 3.5v24c0 1.5-1 2.5-2.5 2.5H10.5C9 32.5 8 31.5 8 30V6z" fill="#0D5C4B"/>
+            <path d="M22 8.5c1.8-2.2 4-3.5 6.5-3.5h1.5c1.2 0 2.2.9 2.2 2.2v20.5c0 .9-.6 1.5-1.5 1.5H24c-1.2 0-2.2-.7-2.8-1.8L22 8.5z" fill="#059669"/>
+            <path d="M14 12c0 0 3 2 5 5.5s2 7 2 7" stroke="#C9A227" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+            <circle cx="21" cy="24.5" r="1.8" fill="#C9A227"/>
+          </g>
+          <text x="48" y="32" font-family="Georgia, serif" font-size="22" font-weight="600" fill="#0D5C4B">BoomPesantren</text>
+        </svg>
+      </a>
+      <nav class="nav">
+        <a href="../index.html">Beranda</a>
+        <a href="../index.html#layanan">Layanan</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="testimoni.html" class="active">Testimoni</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+      <div class="header-actions">
+        <a href="https://wa.me/6281234567890" class="btn btn-primary" target="_blank" rel="noopener">Order</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Testimoni Pelanggan</h1>
+      <p>Apa kata pesantren dan madrasah yang telah menggunakan layanan kami.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="testimoni-grid" id="testimoni-list">
+        <!-- Filled by JS from ../data/testimoni.json — path adjusted in page -->
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Bergabung dengan Lembaga Lainnya</h2>
+      <p>Dapatkan website profesional dengan proses cepat dan desain elegan.</p>
+      <div class="cta-actions">
+        <a href="website-pesantren.html" class="btn btn-gold btn-lg">Buat Website Sekarang</a>
+        <a href="kontak.html" class="btn btn-outline btn-lg" style="border-color:rgba(255,255,255,0.5);color:#fff">Hubungi Kami</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none;padding-top:0">
+        <span>© 2026 BoomPesantren by SilverHawk</span>
+        <a href="../index.html" style="color:var(--gold-400)">← Kembali ke Beranda</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Override path for nested page
+    document.addEventListener('DOMContentLoaded', async () => {
+      const container = document.getElementById('testimoni-list');
+      if (!container) return;
+      try {
+        const res = await fetch('../data/testimoni.json');
+        const data = await res.json();
+        container.innerHTML = data.map(t => {
+          const initial = t.nama.charAt(0).toUpperCase();
+          const stars = '★'.repeat(t.bintang);
+          return `
+            <article class="testimoni-card">
+              <div class="stars">${stars}</div>
+              <p class="teks">"${t.teks}"</p>
+              <div class="author">
+                <div class="avatar">${initial}</div>
+                <div>
+                  <div class="name">${t.nama}</div>
+                  <div class="instansi">${t.instansi}</div>
+                </div>
+              </div>
+            </article>
+          `;
+        }).join('');
+      } catch(e) { console.warn(e); }
+    });
+  </script>
+</body>
+</html>

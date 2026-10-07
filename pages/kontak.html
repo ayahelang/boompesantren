@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontak — BoomPesantren</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .contact-form {
+      max-width: 520px;
+      margin: 0 auto;
+      background: var(--white);
+      border: 1px solid var(--gray-300);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+    }
+    .contact-form label {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--green-900);
+      margin-bottom: 0.35rem;
+    }
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+      width: 100%;
+      padding: 0.7rem 0.9rem;
+      border: 1px solid var(--gray-300);
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      margin-bottom: 1.1rem;
+      background: var(--ivory);
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: var(--green-600);
+      box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.15);
+    }
+    .contact-info-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      margin-bottom: 2.5rem;
+    }
+    @media (max-width: 720px) {
+      .contact-info-cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" fill="none" height="36">
+          <g transform="translate(0,4)">
+            <path d="M8 6c0-2 1.5-3.5 3.5-3.5h2c2.5 0 4.5 1.2 6 3.2 1.5-2 3.5-3.2 6-3.2h2c2 0 3.5 1.5 3.5 3.5v24c0 1.5-1 2.5-2.5 2.5H10.5C9 32.5 8 31.5 8 30V6z" fill="#0D5C4B"/>
+            <path d="M22 8.5c1.8-2.2 4-3.5 6.5-3.5h1.5c1.2 0 2.2.9 2.2 2.2v20.5c0 .9-.6 1.5-1.5 1.5H24c-1.2 0-2.2-.7-2.8-1.8L22 8.5z" fill="#059669"/>
+            <path d="M14 12c0 0 3 2 5 5.5s2 7 2 7" stroke="#C9A227" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+            <circle cx="21" cy="24.5" r="1.8" fill="#C9A227"/>
+          </g>
+          <text x="48" y="32" font-family="Georgia, serif" font-size="22" font-weight="600" fill="#0D5C4B">BoomPesantren</text>
+        </svg>
+      </a>
+      <nav class="nav">
+        <a href="../index.html">Beranda</a>
+        <a href="../index.html#layanan">Layanan</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="testimoni.html">Testimoni</a>
+        <a href="kontak.html" class="active">Kontak</a>
+      </nav>
+      <div class="header-actions">
+        <a href="https://wa.me/6281234567890" class="btn btn-primary" target="_blank" rel="noopener">Order</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Hubungi Kami</h1>
+      <p>Silakan hubungi tim BoomPesantren untuk konsultasi atau order layanan.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="contact-info-cards">
+        <div class="dukungan-card">
+          <div class="icon">📞</div>
+          <h3>WhatsApp</h3>
+          <p>+62 812-3456-7890</p>
+        </div>
+        <div class="dukungan-card">
+          <div class="icon">✉️</div>
+          <h3>Email</h3>
+          <p>support@boompesantren.silverhawk.web.id</p>
+        </div>
+        <div class="dukungan-card">
+          <div class="icon">🕐</div>
+          <h3>Jam Operasional</h3>
+          <p>Senin – Sabtu<br>08.00 – 20.00 WIB</p>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3 style="margin-bottom:1.25rem;color:var(--green-900);font-family:var(--font-serif)">Kirim Pesan</h3>
+        <form id="contactForm" onsubmit="return sendWA(event)">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" name="nama" required placeholder="Nama Anda" />
+
+          <label for="lembaga">Nama Lembaga / Pesantren</label>
+          <input type="text" id="lembaga" name="lembaga" placeholder="Opsional" />
+
+          <label for="layanan">Layanan yang Diminati</label>
+          <select id="layanan" name="layanan">
+            <option value="Website Pesantren">Website Pesantren</option>
+            <option value="Cloud Server">Cloud Server</option>
+            <option value="Hosting RDM">Hosting RDM</option>
+            <option value="BP One Platform">BP One Platform</option>
+            <option value="Lainnya">Lainnya / Konsultasi</option>
+          </select>
+
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="4" required placeholder="Ceritakan kebutuhan Anda..."></textarea>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%">Kirim via WhatsApp</button>
+        </form>
+        <p style="margin-top:1rem;font-size:0.85rem;color:var(--gray-500);text-align:center">
+          Form ini akan membuka WhatsApp dengan pesan yang sudah terisi. Tidak ada data yang disimpan di server.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none;padding-top:0">
+        <span>© 2026 BoomPesantren by SilverHawk</span>
+        <a href="../index.html" style="color:var(--gold-400)">← Kembali ke Beranda</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function sendWA(e) {
+      e.preventDefault();
+      const nama = document.getElementById('nama').value.trim();
+      const lembaga = document.getElementById('lembaga').value.trim();
+      const layanan = document.getElementById('layanan').value;
+      const pesan = document.getElementById('pesan').value.trim();
+      let text = `Halo BoomPesantren,\n\nSaya *${nama}*`;
+      if (lembaga) text += ` dari *${lembaga}*`;
+      text += `.\n\nSaya tertarik dengan layanan: *${layanan}*\n\nPesan:\n${pesan}`;
+      const phone = '6281234567890'; // GANTI nomor WhatsApp Anda
+      window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, '_blank');
+      return false;
+    }
+  </script>
+</body>
+</html>

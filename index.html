@@ -1,12 +1,313 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BoomPesantren — Partner Digitalisasi Pesantren & Lembaga Pendidikan</title>
+  <meta name="description" content="Layanan pembuatan website pesantren instan, cloud server, hosting RDM, dan solusi digital untuk pondok pesantren, madrasah, dan yayasan pendidikan Islam." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
 
-<section class="hero">
-  <div class="container">
-    <h1>Sistem Penerimaan Santri Digital</h1>
-    <p>Meningkatkan 20–40 Santri Baru per Tahun</p>
-    <a href="/pesantren.html" class="btn">Pelajari Solusi</a>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="BoomPesantren">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" fill="none" height="36">
+          <g transform="translate(0,4)">
+            <path d="M8 6c0-2 1.5-3.5 3.5-3.5h2c2.5 0 4.5 1.2 6 3.2 1.5-2 3.5-3.2 6-3.2h2c2 0 3.5 1.5 3.5 3.5v24c0 1.5-1 2.5-2.5 2.5H10.5C9 32.5 8 31.5 8 30V6z" fill="#0D5C4B"/>
+            <path d="M22 8.5c1.8-2.2 4-3.5 6.5-3.5h1.5c1.2 0 2.2.9 2.2 2.2v20.5c0 .9-.6 1.5-1.5 1.5H24c-1.2 0-2.2-.7-2.8-1.8L22 8.5z" fill="#059669"/>
+            <path d="M14 12c0 0 3 2 5 5.5s2 7 2 7" stroke="#C9A227" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+            <circle cx="21" cy="24.5" r="1.8" fill="#C9A227"/>
+          </g>
+          <text x="48" y="32" font-family="Georgia, serif" font-size="22" font-weight="600" fill="#0D5C4B">BoomPesantren</text>
+        </svg>
+      </a>
+
+      <nav class="nav" id="main-nav">
+        <a href="index.html" class="active">Beranda</a>
+        <a href="#layanan">Layanan</a>
+        <a href="pages/tentang.html">Tentang Kami</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-btn">Lainnya ▾</a>
+          <div class="nav-dropdown-menu">
+            <a href="pages/website-pesantren.html">Website Pesantren</a>
+            <a href="pages/testimoni.html">Testimoni</a>
+            <a href="#faq">FAQ</a>
+            <a href="pages/kontak.html">Kontak</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="pages/kontak.html" class="btn btn-outline">Konsultasi</a>
+        <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20order%20layanan%20BoomPesantren" class="btn btn-primary" target="_blank" rel="noopener">Order</a>
+        <button class="menu-toggle" aria-label="Menu" id="menu-toggle">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1>Partner Digitalisasi<br>Pesantren</h1>
+        <p>Layanan pembuatan website pesantren instan & solusi digital untuk Pondok Pesantren, Madrasah, dan Yayasan Pendidikan Islam.</p>
+        <div class="hero-actions">
+          <a href="#layanan" class="btn btn-gold btn-lg">Pelajari Layanan ↓</a>
+          <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi" class="btn btn-outline btn-lg" style="border-color:rgba(255,255,255,0.5);color:#fff" target="_blank" rel="noopener">Konsultasi Gratis</a>
+        </div>
+        <div class="hero-cards">
+          <div class="hero-card">
+            <div class="icon" style="background:rgba(16,185,129,0.25)">🌐</div>
+            <h3>Website Pesantren</h3>
+            <p>Website profesional untuk pesantren.</p>
+          </div>
+          <div class="hero-card">
+            <div class="icon" style="background:rgba(201,162,39,0.25)">☁️</div>
+            <h3>Cloud Server</h3>
+            <p>Server aman untuk aplikasi.</p>
+          </div>
+          <div class="hero-card">
+            <div class="icon" style="background:rgba(16,185,129,0.2)">🖥️</div>
+            <h3>Hosting RDM</h3>
+            <p>Hosting cepat untuk Rapor Digital.</p>
+          </div>
+          <div class="hero-card">
+            <div class="icon" style="background:rgba(201,162,39,0.2)">📦</div>
+            <h3>BP One</h3>
+            <p>Platform digital terpadu.</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-visual-inner">
+          <div class="hero-badge b1"><span>⚡</span> Online ~60 menit</div>
+          <div class="hero-badge b2"><span>🔒</span> SSL & Backup</div>
+          <div class="hero-badge b3"><span>📱</span> Responsif</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact strip -->
+  <div class="contact-strip">
+    <div class="container contact-strip-inner">
+      <div class="contact-item">
+        <strong>Telepon / WhatsApp</strong>
+        <span>+62 812-3456-7890</span>
+      </div>
+      <div class="contact-item">
+        <strong>Email</strong>
+        <span>support@boompesantren.silverhawk.web.id</span>
+      </div>
+      <div class="contact-item">
+        <strong>Jam Operasional</strong>
+        <span>Senin – Sabtu, 08.00 – 20.00 WIB</span>
+      </div>
+    </div>
   </div>
-</section>
+
+  <!-- Layanan -->
+  <section id="layanan">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Solusi Digital</span>
+        <h2 class="section-title">Layanan Kami</h2>
+        <p class="section-desc">Solusi digital lengkap untuk pesantren dan lembaga pendidikan Islam — dari website hingga cloud server dan platform terpadu.</p>
+      </div>
+      <div class="layanan-grid" id="layanan-list">
+        <!-- Filled by JS from data/layanan.json -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Keunggulan -->
+  <section class="keunggulan">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Keunggulan</span>
+        <h2 class="section-title">Mengapa Memilih Kami</h2>
+        <p class="section-desc">Fokus pada kemudahan, keamanan, dan desain yang elegan — cocok untuk citra lembaga pendidikan Islam.</p>
+      </div>
+      <div class="keunggulan-grid">
+        <div class="keunggulan-item">
+          <div class="icon">⚡</div>
+          <h3>Proses Instan</h3>
+          <p>Website online dalam hitungan menit setelah konfirmasi.</p>
+        </div>
+        <div class="keunggulan-item">
+          <div class="icon">🏛️</div>
+          <h3>Domain Resmi</h3>
+          <p>Dukungan domain .sch.id / .ponpes.id yang profesional.</p>
+        </div>
+        <div class="keunggulan-item">
+          <div class="icon">🔒</div>
+          <h3>Gratis SSL</h3>
+          <p>Sertifikat HTTPS otomatis untuk keamanan data.</p>
+        </div>
+        <div class="keunggulan-item">
+          <div class="icon">💾</div>
+          <h3>Backup Berkala</h3>
+          <p>Backup harian otomatis agar data tetap aman.</p>
+        </div>
+        <div class="keunggulan-item">
+          <div class="icon">🎨</div>
+          <h3>Desain Elegan</h3>
+          <p>Tampilan modern, tenang, dan sesuai nilai pesantren.</p>
+        </div>
+        <div class="keunggulan-item">
+          <div class="icon">📱</div>
+          <h3>Responsif</h3>
+          <p>Tampil sempurna di desktop, tablet, dan ponsel.</p>
+        </div>
+        <div class="keunggulan-item">
+          <div class="icon">📄</div>
+          <h3>Halaman Unlimited</h3>
+          <p>Bebas menambah konten sesuai kebutuhan lembaga.</p>
+        </div>
+        <div class="keunggulan-item">
+          <div class="icon">🤝</div>
+          <h3>Support Penuh</h3>
+          <p>WhatsApp & Google Meet untuk pendampingan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section id="testimoni">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Testimoni</span>
+        <h2 class="section-title">Apa Kata Mereka</h2>
+        <p class="section-desc">Ulasan dari pesantren dan madrasah yang telah mempercayakan digitalisasi kepada kami.</p>
+      </div>
+      <div class="testimoni-grid" id="testimoni-list">
+        <!-- Filled by JS -->
+      </div>
+      <div class="text-center mt-2">
+        <a href="pages/testimoni.html" class="btn btn-outline">Lihat Semua Testimoni</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dukungan -->
+  <section style="background:var(--white)">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Dukungan</span>
+        <h2 class="section-title">Kami Selalu Siap Membantu</h2>
+        <p class="section-desc">Berbagai saluran dukungan untuk memastikan pengalaman terbaik Anda.</p>
+      </div>
+      <div class="dukungan-grid">
+        <div class="dukungan-card">
+          <div class="icon">🎬</div>
+          <h3>Video Tutorial</h3>
+          <p>Panduan pengelolaan website yang dapat diakses kapan saja.</p>
+        </div>
+        <div class="dukungan-card">
+          <div class="icon">💻</div>
+          <h3>Panduan Live</h3>
+          <p>Sesi Google Meet untuk menjawab pertanyaan seputar pengelolaan.</p>
+        </div>
+        <div class="dukungan-card">
+          <div class="icon">💬</div>
+          <h3>Bantuan WhatsApp</h3>
+          <p>Tim support siap membantu via WhatsApp setiap hari kerja.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Pertanyaan Umum</h2>
+        <p class="section-desc">Jawaban singkat untuk pertanyaan yang sering diajukan.</p>
+      </div>
+      <div class="faq-list" id="faq-list">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Siap Membuat Website Pesantren Anda?</h2>
+      <p>Bergabunglah dengan lembaga pendidikan yang telah mempercayakan digitalisasi mereka kepada kami.</p>
+      <div class="cta-actions">
+        <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20mulai%20order" class="btn btn-gold btn-lg" target="_blank" rel="noopener">Mulai Sekarang</a>
+        <a href="pages/kontak.html" class="btn btn-outline btn-lg" style="border-color:rgba(255,255,255,0.5);color:#fff">Konsultasi Gratis</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" fill="none" height="32">
+            <g transform="translate(0,4)">
+              <path d="M8 6c0-2 1.5-3.5 3.5-3.5h2c2.5 0 4.5 1.2 6 3.2 1.5-2 3.5-3.2 6-3.2h2c2 0 3.5 1.5 3.5 3.5v24c0 1.5-1 2.5-2.5 2.5H10.5C9 32.5 8 31.5 8 30V6z" fill="#10B981"/>
+              <path d="M22 8.5c1.8-2.2 4-3.5 6.5-3.5h1.5c1.2 0 2.2.9 2.2 2.2v20.5c0 .9-.6 1.5-1.5 1.5H24c-1.2 0-2.2-.7-2.8-1.8L22 8.5z" fill="#059669"/>
+              <path d="M14 12c0 0 3 2 5 5.5s2 7 2 7" stroke="#C9A227" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+              <circle cx="21" cy="24.5" r="1.8" fill="#C9A227"/>
+            </g>
+            <text x="48" y="32" font-family="Georgia, serif" font-size="22" font-weight="600" fill="#F8F6F1">BoomPesantren</text>
+          </svg>
+          <p>Partner digitalisasi untuk Pondok Pesantren, Madrasah, dan Yayasan Pendidikan Islam. Desain elegan, proses cepat, support penuh.</p>
+        </div>
+        <div>
+          <h4>Layanan</h4>
+          <ul>
+            <li><a href="pages/website-pesantren.html">Website Pesantren</a></li>
+            <li><a href="#layanan">Cloud Server</a></li>
+            <li><a href="#layanan">Hosting RDM</a></li>
+            <li><a href="#layanan">BP One Platform</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Perusahaan</h4>
+          <ul>
+            <li><a href="pages/tentang.html">Tentang Kami</a></li>
+            <li><a href="pages/testimoni.html">Testimoni</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="pages/kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontak</h4>
+          <ul>
+            <li>+62 812-3456-7890</li>
+            <li>support@boompesantren.silverhawk.web.id</li>
+            <li>Senin–Sabtu, 08.00–20.00 WIB</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 BoomPesantren by SilverHawk. Semua hak dilindungi.</span>
+        <span>Hosted on GitHub Pages · Domain: boompesantren.silverhawk.web.id</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp float -->
+  <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20BoomPesantren" class="wa-float" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Chat WhatsApp
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

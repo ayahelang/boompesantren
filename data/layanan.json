@@ -1,0 +1,50 @@
+[
+  {
+    "id": "website",
+    "title": "Website Pesantren",
+    "short": "Website profesional untuk pesantren, madrasah & yayasan.",
+    "icon": "globe",
+    "desc": "Pembuatan website instan untuk Pondok Pesantren, Madrasah, Yayasan Pendidikan Islam, dan lembaga pendidikan lainnya. Desain modern, mudah dikelola, domain .sch.id atau .ponpes.id.",
+    "features": ["Proses instan ~60 menit", "Domain resmi", "SSL gratis", "Backup harian", "Panel admin mudah", "Update fitur berkala"]
+  },
+  {
+    "id": "cloud",
+    "title": "Cloud Server",
+    "short": "Server aman untuk aplikasi pesantren & sekolah.",
+    "icon": "cloud",
+    "desc": "Cloud server Windows/Linux untuk e-Rapor, Dapodik, aplikasi absensi, SPP, dan sistem internal pesantren. Akses dari mana saja dengan domain resmi.",
+    "features": ["Uptime tinggi", "Backup otomatis", "Akses remote aman", "Support teknis", "Gratis instalasi awal"]
+  },
+  {
+    "id": "hosting-rdm",
+    "title": "Hosting RDM",
+    "short": "Hosting cepat untuk Rapor Digital Madrasah.",
+    "icon": "server",
+    "desc": "Hosting khusus Rapor Digital Madrasah (RDM) dari Kemenag. Optimasi performa, keamanan, dan kemudahan akses bagi operator madrasah.",
+    "features": ["Optimasi RDM", "SSL & keamanan", "Backup harian", "Support WhatsApp", "Update aplikasi"]
+  },
+  {
+    "id": "platform",
+    "title": "BP One Platform",
+    "short": "Platform digital pesantren terpadu.",
+    "icon": "layers",
+    "desc": "Satu dashboard untuk website, berita, agenda, PPDB, galeri, dan modul administrasi dasar pesantren. Dirancang sederhana namun lengkap.",
+    "features": ["Modul terintegrasi", "Responsif mobile", "Hak akses multi-level", "Notifikasi", "Laporan sederhana"]
+  },
+  {
+    "id": "hosting-sekolah",
+    "title": "Hosting Aplikasi",
+    "short": "Hosting untuk CBT, absensi, buku induk & lainnya.",
+    "icon": "harddrive",
+    "desc": "Hosting stabil untuk aplikasi sekolah/pesantren: CBT, absensi digital, buku induk, perpustakaan digital, dan aplikasi internal lainnya.",
+    "features": ["Resource dedikasi", "Monitoring 24/7", "Migrasi dibantu", "Support teknis"]
+  },
+  {
+    "id": "template",
+    "title": "Template Siap Pakai",
+    "short": "Template WordPress & static khusus lembaga pendidikan Islam.",
+    "icon": "layout",
+    "desc": "Koleksi template elegan bertema pendidikan Islam, siap custom warna dan konten. Cocok untuk yang ingin self-host atau migrasi.",
+    "features": ["Desain elegan", "SEO friendly", "Dokumentasi lengkap", "Update berkala"]
+  }
+]
